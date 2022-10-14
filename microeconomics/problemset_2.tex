@@ -8,22 +8,22 @@
         \item The utility function is $u(x_1,x_2) = x_1x_2$
         \begin{enumerate}
             \item Using the definition of indirect utility and duality:
-            \begin{align}
+            \begin{align*}
                 v(p_1,p_2,m) = \frac{m^2}{4p_1p_2} \\
                 v(p_1,p_2,e(p_1,p_2,u)) = u \\
                 e(p_1,p_2,u)^2 = 4p_1p_2u \\
                 e(p_1,p_2,u) = \sqrt{4p_1p_2u}
-            \end{align}
+            \end{align*}
             \item CV and EV:
             \begin{enumerate}
                 \item Mr Watt's would take a £50 pay cut to achieve the same utility as he currently has.
-                \begin{align}
+                \begin{align*}
                     e(p_1,v(p_0,m_0)) - m_0 = \sqrt{4 * \frac{1}{4} * 1 * \frac{100^2}{4 * 1 * 1}} - 100 = -50
-                \end{align}
+                \end{align*}
                 \item A £100 increase pay would be required to achieve the same level of utility as in the new town.
-                \begin{align}
+                \begin{align*}
                     m_1 - e(p_0,v(p_1,m_1)) = 100 - \sqrt{4 * 1 * 1 * \frac{100^2}{4 * \frac{1}{4} * 1}} = -100
-                \end{align}
+                \end{align*}
             \end{enumerate}
             \item The consumer surplus will be between -50 and -100.
         \end{enumerate}
@@ -31,48 +31,51 @@
         \item 
         \begin{enumerate}
             \item Hotelling's Lemma says that if $y^*,x^*$ are the solution to the PMP for a firm then we have that:
-            \begin{align}
+            \begin{align*}
                 \pdv{\pi}{p} = y^*(p,\textbf{w}) \\
                 \pdv{\pi}{w_i} = -x^*_i(p,\textbf{w})
-            \end{align}
+            \end{align*}
             To see this is true, consider the PMP:
-            \begin{align}
+            \begin{align*}
                 \max_{y,x} py(p) - \textbf{wx}
-            \end{align}
+            \end{align*}
 
-            Shepard's Lemma can be applied to the optimal value function $\pi(p, \textbf{w})$ directly to give the result.
+            and apply Shepard's Lemma to the optimal value function $\pi(p, \textbf{w})$.
 
             \item If $w_i$ increases, then we can see that profit must decrease, as $x_i > 0$.
-            \item \begin{align}
+            \item \begin{align*}
                 \max_{L} pL^\frac{1}{2} - wL \\
                 \frac{1}{2}pL^{-\frac{1}{2}} - w = 0 \\
                 L = (\frac{p}{2w})^2 \\
                 \pi = \frac{p^2}{2w} - \frac{p^2}{4w} \\
                 \pdv{\pi}{w} = -\frac{p^2}{2w^2} + \frac{p^2}{4w^2} = -\frac{p^2}{4w^2} = -L
-            \end{align}
+            \end{align*}
         \end{enumerate}
 
         \item \begin{enumerate}
-            \item \begin{align}
-                40p - 2pz - w = 0 \\
-                -2
-            \end{align}
-            Therefore profit maximising as the second derivative is negative. 
-            \item ?
+            \item \begin{align*}
+                40p - 2pz - w = 0
+            \end{align*}
+            The second derivative is $-2$, therefore this solution is profit maximising. 
+            \item 
+            \begin{enumerate}
+                \item If $z^* = 0$, then $w = 40p$.
+                \item If $z^* = 20$, then $w = 0$ and $p \neq 0$.  
+            \end{enumerate}
             \item The input demand function is $z^* = \frac{40p - w}{2p} = 20 - \frac{w}{2p}$. The output supply function is:
-            \begin{align}
+            \begin{align*}
                 y^* &= 40z^* - {z^*}^2 \\
                 &= 40(20 - \frac{w}{2p}) - (20 - \frac{w}{2p})^2 \\
                 &= 800 - \frac{20w}{p} - 400 + \frac{20w}{p} - \frac{w^2}{4p^2}\\
                 &= 400 - \frac{w^2}{4p^2}\\
                 \pi &= py(p) - wz \\
                 \pi &= 400p - \frac{w^2}{4p} - 20w + \frac{w^2}{2p} 
-            \end{align}
+            \end{align*}
             \item Hotelling's Lemma:
-            \begin{align}
+            \begin{align*}
                 \pdv{\pi}{w} &= -(20 - \frac{w}{2p})\\
                 &=-z^*(p,w)
-            \end{align} 
+            \end{align*} 
         \end{enumerate}
     \end{enumerate}
 \end{document}
