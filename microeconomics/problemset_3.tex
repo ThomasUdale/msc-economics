@@ -1,0 +1,59 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{derivative}
+\usepackage{amssymb}
+
+\newcommand{\Lagr}{\mathcal{L}}
+
+\title{Microeconomics: Problem Set 3}
+\author{Tom Udale}
+
+\begin{document}
+    \maketitle
+
+    \begin{enumerate}
+        \item \begin{enumerate}
+            \item The lagrangian for this problem:
+            $$\Lagr = wL + rK - \lambda(L^\frac{1}{4}K^\frac{1}{4} - y)$$
+            gives the following first order conditions:
+            \begin{align*}
+                \pdv{\Lagr}{L} &= w - \frac{1}{4} \lambda L^{-\frac{3}{4}} K^\frac{1}{4} \\
+                \pdv{\Lagr}{K} &= r - \frac{1}{4} \lambda K^{-\frac{3}{4}} L^\frac{1}{4} \\
+                \pdv{\Lagr}{\lambda} &= L^\frac{1}{4}K^\frac{1}{4} - Y
+            \end{align*}
+            Solving gives:
+            \begin{align*}
+                w L^\frac{3}{4} K^{-\frac{1}{4}} &= r K^\frac{3}{4} L^{-\frac{1}{4}} \\
+                w L &= r K \\
+                (\frac{rK}{w})^{\frac{1}{4}}K^\frac{1}{4} &= Y \\
+                K^* &= \sqrt{\frac{w}{r}}Y^2 \\
+                L^* &= \sqrt{\frac{r}{w}}Y^2
+            \end{align*}
+            \item The cost function is given by:
+            $$c(w,r,Y) = wL^* + rK^* =  2\sqrt{rw}Y^2$$
+            This is concave in $w$. To see this note that:
+            \begin{align*}
+                \pdv{c}{w} &= \sqrt{\frac{r}{w}}Y^2\\
+                \pdv[order=2]{c}{w} &= -\sqrt{\frac{r}{w^3}}Y^2 \\
+                &< 0 
+            \end{align*}
+            for all $w>0$.
+            \item By Shepard's Lemma, we have that:
+            $$\pdv{c}{w_i} = x^*_i(p,w)$$
+            And therefore:
+            $$\pdv[order=2]{c}{w_i} = \pdv{x^*_i}{w_i}$$
+            which is less than 0 for ordinary goods. So the cost function is concave in the prices of inputs. 
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item The lagrangian for a firm's cost minimisation problem is of the form:
+            $$\Lagr = \mathbf{w}.\mathbf{x} - \lambda(f(\mathbf{x}) - Y)$$
+            for given output $Y$. The Envelope Theorem for Constrained Optimisation states that for the optimal value function $c(\mathbf{w},Y)$,
+            \begin{align*}
+                \frac{dc}{dw_i} &= \pdv{\Lagr}{w_i}  \bigg\rvert_{\mathbf{x}=\mathbf{x}^*} \\
+                &= x_i
+            \end{align*}
+        \end{enumerate}
+    \end{enumerate}
+
+\end{document}
